@@ -47,8 +47,8 @@ fun WelcomeScreen(navController: NavController) {
                 onClick = {
                     navController.navigate(PlayerRepository.Screen.Formation.route)
                 },
-                backgroundColor = Color(0xFF3700B3), // Customize a cor do botão se desejar
-                contentColor = Color.White // Customize a cor do texto
+                backgroundColor = Color(0xFF3700B3),
+                contentColor = Color.White
             )
         }
     }

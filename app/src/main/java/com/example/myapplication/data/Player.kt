@@ -52,7 +52,7 @@ object PlayerRepository {
     sealed class Screen(val route: String) {
         object Welcome : Screen("welcome")
         object Formation : Screen("formation")
-        object Formation442 : Screen("formation_4_4_2") // Certifique-se de que o route seja diferente
+        object Formation442 : Screen("formation_4_4_2")
         object PlayerDetail : Screen("player_detail/{playerId}") {
             fun createRoute(playerId: Int) = "player_detail/$playerId"
         }

@@ -55,7 +55,7 @@ fun PlayerCircle(playerNumber: Int, playerId: Int, imageUrl: String, navControll
         Button(
             onClick = { navController.navigate(PlayerRepository.Screen.PlayerDetail.createRoute(playerId)) },
             colors = ButtonDefaults.buttonColors(
-                containerColor = Color.Transparent // Remove button background color to keep circle visible
+                containerColor = Color.Transparent
             ),
             modifier = Modifier.fillMaxSize()
         ) {}

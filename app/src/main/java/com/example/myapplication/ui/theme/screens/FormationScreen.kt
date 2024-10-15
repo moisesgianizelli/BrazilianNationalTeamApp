@@ -21,7 +21,6 @@ import coil.compose.rememberImagePainter
 @Composable
 fun FormationScreen(navController: NavController) {
     Box(modifier = Modifier.fillMaxSize()) {
-        // Imagem de fundo
         Image(
             painter = rememberImagePainter("https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Football_field.svg/1200px-Football_field.svg.png"), // Substitua pela URL da imagem de fundo
             contentDescription = null,
@@ -37,12 +36,11 @@ fun FormationScreen(navController: NavController) {
             verticalArrangement = Arrangement.SpaceEvenly
         ) {
             Button(
-                onClick = { navController.navigate(PlayerRepository.Screen.Formation442.route) }, // Corrigido
+                onClick = { navController.navigate(PlayerRepository.Screen.Formation442.route) },
                 modifier = Modifier.align(Alignment.Start)
             ) {
                 Text("Change to 4-4-2")
             }
-            // Goalkeeper (1)
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.Center
@@ -53,7 +51,6 @@ fun FormationScreen(navController: NavController) {
                 }
             }
 
-            // Defensores (2, 3, 4, 5)
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly
@@ -76,7 +73,6 @@ fun FormationScreen(navController: NavController) {
                 }
             }
 
-            // Meio-campistas (6, 7, 8)
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly
@@ -95,7 +91,6 @@ fun FormationScreen(navController: NavController) {
                 }
             }
 
-            // Atacantes (9, 10, 11)
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly
@@ -114,7 +109,6 @@ fun FormationScreen(navController: NavController) {
                 }
             }
 
-            // Botões para navegar para favoritos e conquistas
             Button(onClick = { navController.navigate(PlayerRepository.Screen.Achievements.route) }) {
                 Text("View Team Achievements")
             }
@@ -125,7 +119,6 @@ fun FormationScreen(navController: NavController) {
 @Composable
 fun FormationScreen442(navController: NavController) {
     Box(modifier = Modifier.fillMaxSize()) {
-        // Imagem de fundo
         Image(
             painter = rememberImagePainter("https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Football_field.svg/1200px-Football_field.svg.png"),
             contentDescription = null,
@@ -158,7 +151,7 @@ fun FormationScreen442(navController: NavController) {
                 }
             }
 
-            // Defensores (2, 3, 4, 5)
+            // (2, 3, 4, 5)
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly
@@ -181,7 +174,7 @@ fun FormationScreen442(navController: NavController) {
                 }
             }
 
-            // Meio-campistas (6, 7, 11)
+            // (6, 7, 11)
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly
@@ -206,7 +199,7 @@ fun FormationScreen442(navController: NavController) {
                 Text(text = "Rodrygo", style = MaterialTheme.typography.bodyMedium)
             }
 
-            // Atacantes (9, 10)
+            // (9, 10)
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly
@@ -221,7 +214,6 @@ fun FormationScreen442(navController: NavController) {
                 }
             }
 
-            // Botões para navegar para favoritos e conquistas
             Button(onClick = { navController.navigate(PlayerRepository.Screen.Achievements.route) }) {
                 Text("View Team Achievements")
             }

@@ -29,11 +29,9 @@ fun FavoritesScreen(navController: NavController) {
     ) {
         Text("Favorite Players", fontSize = 24.sp)
 
-        // Exibe mensagem caso não haja jogadores favoritos
         if (PlayerRepository.favoritePlayers.isEmpty()) {
             Text("No favorite players yet.")
         } else {
-            // LazyColumn para permitir rolagem
             LazyColumn(
                 modifier = Modifier.fillMaxSize()
             ) {

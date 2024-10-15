@@ -32,8 +32,6 @@ fun AllPlayersScreen(navController: NavController) {
         Text("All Players", fontSize = 24.sp, fontWeight = FontWeight.Bold)
 
         Spacer(modifier = Modifier.height(16.dp))
-
-        // LazyColumn para permitir rolagem
         LazyColumn(
             modifier = Modifier.fillMaxSize()
         ) {

@@ -52,7 +52,7 @@ fun MainFunction() {
             composable(PlayerRepository.Screen.Formation.route) {
                 FormationScreen(navController)
             }
-            composable(PlayerRepository.Screen.Formation442.route) { // Corrigido: use Formation442.route
+            composable(PlayerRepository.Screen.Formation442.route) {
                 FormationScreen442(navController)
             }
             composable(PlayerRepository.Screen.Favorites.route) {
